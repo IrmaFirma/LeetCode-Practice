@@ -1,0 +1,2 @@
+# LeetCode
+Preparing for FAANG
