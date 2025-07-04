@@ -1,20 +1,24 @@
-int findLength(string s) {
-    // curr is the current number of zeros in the window
-    int left = 0, curr = 0, ans = 0;
-    for (int right = 0; right < s.size(); right++) {
-        if (s[right] == '0') {
-            curr++;
-        }
-        
-        while (curr > 1) {
-            if (s[left] == '0') {
-                curr--;
+class Solution {
+public:
+    int longestOnes(vector<int>& nums, int k) {
+        int curr_zeros = 0;
+        int answer = 0;
+        int left = 0;
+        for(int right = 0; right<nums.size(); right++){
+            if(nums[right] == 0){
+                curr_zeros++;
             }
-            left++;
+
+            while(ccurr_zeros>k){
+                if(nums[left] == 0){
+                    curr_zeros--;
+                }
+                left++;
+            }
+
+            answer = max (answer, right - left + 1);
         }
-        
-        ans = max(ans, right - left + 1);
+
+        return answer;
     }
-    
-    return ans;
-}
+};
