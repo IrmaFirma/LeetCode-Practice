@@ -9,7 +9,7 @@ public:
                 curr_zeros++;
             }
 
-            while(ccurr_zeros>k){
+            while(curr_zeros>k){
                 if(nums[left] == 0){
                     curr_zeros--;
                 }
