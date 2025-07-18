@@ -12,5 +12,8 @@ The main goal of this repository is to **strengthen my problem-solving skills** 
 - Two Pointers
 - Sliding Window
 - Stack & Queue
+- Recursion
+- Sliding Window
+- Two pointers
 
 ## 🛠️ Work In Progress
